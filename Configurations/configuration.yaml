@@ -1,0 +1,27 @@
+loggers:
+  default_logger:
+    name: 'Default Logger'
+    log_class: 2
+    log_script_information: yes
+    log_to_file: no
+    log_name: 'logfile.txt'
+  EmailProvider:
+    name: 'EmailProvider'
+    log_class: 2
+    log_script_information: yes
+    log_to_file: yes
+    log_name: 'EmailProvider_log'
+
+
+smtp_servers:
+  connection_timeout: 60
+  servers:
+    default_server:
+      address: 'smtp.gmail.com'
+      port: 587
+    google:
+      address: 'smtp.gmail.com'
+      port: 587
+    mail_ru:
+     address: 'smtp.mail.ru'
+     port: 465
